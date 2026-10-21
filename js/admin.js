@@ -74,7 +74,7 @@
       <div class="day" title="${fmtFecha(x.d)}: ${x.n}">
         <span class="day-n">${x.n || ''}</span>
         <span class="day-bar" style="height:${x.n ? Math.max(6, Math.round(x.n / maxDia * 100)) : 2}%"></span>
-        <span class="day-l">${x.d.getDate()}/${x.d.getMonth() + 1}</span>
+        <span class="day-l">${x.d.getDate()}</span>
       </div>`).join('');
 
     $('clientList').innerHTML = s.ultimos.length
