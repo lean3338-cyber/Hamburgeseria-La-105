@@ -10,13 +10,13 @@ const productos = [
     desc: '1 hamburguesa doble carne + 1 porción de papas fritas.', img: '' },
   // Solo burger
   { id: 4, nombre: 'Hamburguesa Simple', categoria: 'solo', precio: 4000, emoji: '🍔',
-    desc: 'Hamburguesa simple, sola.', img: 'img/hambu-simple.jpeg' },
+    desc: 'Hamburguesa simple, sola.', img: 'img/hambu-simple.jpg' },
   { id: 5, nombre: 'Hamburguesa Completa', categoria: 'solo', precio: 5000, emoji: '🍔',
     desc: 'Hamburguesa completa, sola.', img: '' },
   { id: 6, nombre: 'Hamburguesa Doble Carne', categoria: 'solo', precio: 6000, emoji: '🍔',
-    desc: 'Hamburguesa con doble carne, sola.', img: 'img/doble-carne.jpeg' },
+    desc: 'Hamburguesa con doble carne, sola.', img: 'img/doble-carne.jpg' },
   { id: 7, nombre: 'Papas Fritas', categoria: 'solo', precio: 3000, emoji: '🍟',
-    desc: 'Porción de papas fritas.', img: 'img/papas-solas.jpeg' },
+    desc: 'Porción de papas fritas.', img: 'img/papas-solas.jpg' },
   // Para compartir
   { id: 8, nombre: '2 Completas + Papas', categoria: 'compartir', precio: 12000, emoji: '🍔🍟',
     desc: '2 hamburguesas completas + 1 porción de papas.', img: '' },
