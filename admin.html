@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
-  <title>Panel del dueño | La 105</title>
+  <title>Administración | La 105</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 
   <header class="admin-top">
     <div class="container admin-top-inner">
-      <a href="index.html" class="admin-brand"><img src="img/logo.jpg" alt="La 105" class="logo-img"> <span>Panel del dueño</span></a>
+      <a href="index.html" class="admin-brand"><img src="img/logo.jpg" alt="La 105" class="logo-img"> <span>Administración</span></a>
       <div class="admin-actions hidden" id="adminActions">
         <span class="user-name" id="adminUser"></span>
         <button class="btn btn-outline btn-sm" id="refreshBtn">↻ Actualizar</button>
@@ -31,9 +31,9 @@
       Para ver los de todos los clientes hay que conectar Firebase (guía incluida).
     </p>
 
-    <!-- Ingreso del dueño -->
+    <!-- Acceso de administrador -->
     <section class="admin-login hidden" id="adminLogin">
-      <h1>Ingreso del dueño</h1>
+      <h1>Acceso de administrador</h1>
       <p>Entrá con el email y la contraseña de tu cuenta.</p>
       <form id="adminLoginForm">
         <div class="form-group">
@@ -55,7 +55,7 @@
       <p>Para darle permiso, entrá a la consola de Firebase → <em>Firestore Database</em> → creá la colección
         <code>admins</code> y un documento cuyo ID sea este código (puede ir vacío, o con un campo cualquiera):</p>
       <p class="admin-uid" id="adminUid"></p>
-      <p class="admin-hint">Los pasos con imágenes están en <strong>GUIA-FIREBASE.md</strong>, sección “Panel del dueño”. Después tocá “Actualizar”.</p>
+      <p class="admin-hint">Los pasos con imágenes están en <strong>GUIA-FIREBASE.md</strong>, sección “Panel de administración”. Después tocá “Actualizar”.</p>
       <button class="btn btn-outline" id="deniedRetry">↻ Ya lo hice, actualizar</button>
       <button class="link-btn" id="deniedLogout">Salir</button>
     </section>
