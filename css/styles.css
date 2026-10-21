@@ -379,8 +379,8 @@ section { padding: 90px 0; }
 .rank-val small { color: var(--texto-suave); font-weight: 400; }
 .bar { background: var(--gris); border-radius: 50px; height: 10px; overflow: hidden; }
 .bar span { display: block; height: 100%; background: linear-gradient(90deg, var(--rojo), var(--amarillo)); border-radius: 50px; }
-.days { display: flex; align-items: flex-end; gap: 6px; height: 170px; padding-top: 10px; }
-.day { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; font-size: 0.65rem; color: var(--texto-suave); }
+.days { display: flex; align-items: flex-end; gap: 4px; overflow: hidden; height: 170px; padding-top: 10px; }
+.day { flex: 1; min-width: 0; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; font-size: 0.65rem; color: var(--texto-suave); }
 .day-bar { width: 100%; background: var(--rojo); border-radius: 4px 4px 0 0; min-height: 2px; }
 .day-n { color: var(--texto); font-weight: 700; margin-bottom: 2px; }
 .day-l { margin-top: 4px; }
