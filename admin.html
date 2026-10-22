@@ -52,10 +52,8 @@
     <!-- Cuenta sin permiso -->
     <section class="admin-login hidden" id="adminDenied">
       <h1>Esta cuenta no es administradora</h1>
-      <p>Para darle permiso, entrá a la consola de Firebase → <em>Firestore Database</em> → creá la colección
-        <code>admins</code> y un documento cuyo ID sea este código (puede ir vacío, o con un campo cualquiera):</p>
+
       <p class="admin-uid" id="adminUid"></p>
-      <p class="admin-hint">Los pasos con imágenes están en <strong>GUIA-FIREBASE.md</strong>, sección “Panel de administración”. Después tocá “Actualizar”.</p>
       <button class="btn btn-outline" id="deniedRetry">↻ Ya lo hice, actualizar</button>
       <button class="link-btn" id="deniedLogout">Salir</button>
     </section>
