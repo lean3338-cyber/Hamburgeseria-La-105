@@ -389,3 +389,10 @@ section { padding: 90px 0; }
 .client-list li em { grid-column: 2; grid-row: 1 / span 2; align-self: center; color: var(--texto-suave); font-style: normal; font-size: 0.8rem; }
 @media (max-width: 600px) { .admin-grid { grid-template-columns: 1fr; } .rank-row { grid-template-columns: 1fr 1fr auto; } }
 #adminDash { padding: 0; }
+
+/* Ojito de la contraseña */
+.pass-wrap { position: relative; }
+.pass-wrap input { padding-right: 46px; }
+.pass-eye { position: absolute; right: 6px; top: 50%; transform: translateY(-50%); background: none; border: 0; color: var(--texto-suave); cursor: pointer; padding: 8px; display: flex; border-radius: 8px; }
+.pass-eye:hover, .pass-eye:focus-visible { color: var(--amarillo); outline: none; }
+button:disabled { opacity: 0.7; cursor: wait; }
