@@ -127,7 +127,6 @@
       }));
     } catch (e) {
       if (e && (e.code === 'permission-denied' || /permission/i.test(e.message || ''))) {
-        $('adminUid').textContent = uidActual || '';
         mostrar('adminDenied');
       } else {
         console.error(e);
