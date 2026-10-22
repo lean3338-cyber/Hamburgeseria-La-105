@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="icon" href="img/logo.jpg">
-  <link rel="stylesheet" href="css/styles.css?v=12">
+  <link rel="stylesheet" href="css/styles.css?v=13">
 </head>
 <body class="admin-body">
 
@@ -26,7 +26,10 @@
 
   <main class="container admin-main">
 
-
+    <p class="admin-banner hidden" id="demoBanner">
+      <strong>Modo demostración.</strong> Estás viendo solo los datos guardados en este navegador.
+      Para ver los de todos los clientes hay que conectar Firebase (guía incluida).
+    </p>
 
     <!-- Acceso de administrador -->
     <section class="admin-login hidden" id="adminLogin">
@@ -48,18 +51,16 @@
 
     <!-- Cuenta sin permiso -->
     <section class="admin-login hidden" id="adminDenied">
-      <h1>Esta cuenta no es administradora</h1>
-         <p>No Eres Administrador</p>
-
-     <p class="admin-uid" id="adminUid"></p> 
-      <button class="btn btn-outline" id="deniedRetry">↻ Ya lo hice, actualizar</button>
+      <h1>Sin acceso</h1>
+      <p>Esta cuenta no tiene permiso para ver las estadísticas. Si sos el dueño, pedile el acceso a quien administra la página.</p>
+      <button class="btn btn-outline" id="deniedRetry">↻ Volver a probar</button>
       <button class="link-btn" id="deniedLogout">Salir</button>
     </section>
 
     <!-- Estadísticas -->
     <section class="hidden" id="adminDash">
       <h1 class="admin-title">Estadísticas</h1>
-     
+      <p class="admin-hint" id="updatedAt"></p>
 
       <div class="kpis">
         <div class="kpi"><span class="kpi-num" id="kClientes">0</span><span class="kpi-label">Clientes registrados</span></div>
@@ -94,8 +95,8 @@
 
   </main>
 
-  <script src="js/firebase-config.js?v=12"></script>
-  <script src="js/productos.js?v=12"></script>
-  <script src="js/admin.js?v=12"></script>
+  <script src="js/firebase-config.js?v=13"></script>
+  <script src="js/productos.js?v=13"></script>
+  <script src="js/admin.js?v=13"></script>
 </body>
 </html>
