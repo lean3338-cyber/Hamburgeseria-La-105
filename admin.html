@@ -18,7 +18,6 @@
       <a href="index.html" class="admin-brand"><img src="img/logo.jpg" alt="La 105" class="logo-img"> <span>Administración</span></a>
       <div class="admin-actions hidden" id="adminActions">
         <span class="user-name" id="adminUser"></span>
-        <p>No Eres Administrador</p>
         <button class="btn btn-outline btn-sm" id="refreshBtn">↻ Actualizar</button>
         <button class="link-btn" id="adminLogout">Salir</button>
       </div>
@@ -27,10 +26,7 @@
 
   <main class="container admin-main">
 
-    <p class="admin-banner hidden" id="demoBanner">
-      <strong>Modo demostración.</strong> Estás viendo solo los datos guardados en este navegador.
-      Para ver los de todos los clientes hay que conectar Firebase (guía incluida).
-    </p>
+
 
     <!-- Acceso de administrador -->
     <section class="admin-login hidden" id="adminLogin">
@@ -53,6 +49,7 @@
     <!-- Cuenta sin permiso -->
     <section class="admin-login hidden" id="adminDenied">
       <h1>Esta cuenta no es administradora</h1>
+         <p>No Eres Administrador</p>
 
       <p class="admin-uid" id="adminUid"></p>
       <button class="btn btn-outline" id="deniedRetry">↻ Ya lo hice, actualizar</button>
@@ -62,7 +59,7 @@
     <!-- Estadísticas -->
     <section class="hidden" id="adminDash">
       <h1 class="admin-title">Estadísticas</h1>
-      <p class="admin-hint" id="updatedAt"></p>
+     
 
       <div class="kpis">
         <div class="kpi"><span class="kpi-num" id="kClientes">0</span><span class="kpi-label">Clientes registrados</span></div>
