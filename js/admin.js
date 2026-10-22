@@ -172,10 +172,13 @@
     $('adminLoginForm').addEventListener('submit', async (e) => {
       e.preventDefault();
       msg('');
+      const btn = e.target.querySelector('button[type="submit"]');
+      btn.disabled = true; btn.textContent = 'Verificando…';
       try {
         await fb.authM.signInWithEmailAndPassword(fb.auth, $('aEmail').value.trim().toLowerCase(), $('aPass').value);
         $('adminLoginForm').reset();
       } catch (err) { msg(errorLogin(err)); }
+      finally { btn.disabled = false; btn.textContent = 'Ingresar'; }
     });
     const salir = () => fb.authM.signOut(fb.auth);
     $('adminLogout').addEventListener('click', salir);
@@ -183,6 +186,33 @@
     $('refreshBtn').addEventListener('click', cargarNube);
     $('deniedRetry').addEventListener('click', cargarNube);
   }
+
+
+  /* ---------- Ojito para ver la contraseña ---------- */
+function agregarOjitos() {
+  const ABIERTO = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>';
+  const TACHADO = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.9 10.9 0 0 1 12 19c-7 0-11-7-11-7a19.8 19.8 0 0 1 5.06-5.94M9.9 4.24A10.9 10.9 0 0 1 12 4c7 0 11 7 11 7a19.8 19.8 0 0 1-3.17 4.19M14.12 14.12A3 3 0 1 1 9.88 9.88"/><path d="M1 1l22 22"/></svg>';
+  document.querySelectorAll('input[type="password"]').forEach((inp) => {
+    if (inp.parentNode.classList.contains('pass-wrap')) return;
+    const caja = document.createElement('div');
+    caja.className = 'pass-wrap';
+    inp.parentNode.insertBefore(caja, inp);
+    caja.appendChild(inp);
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'pass-eye';
+    b.setAttribute('aria-label', 'Mostrar contraseña');
+    b.innerHTML = ABIERTO;
+    b.addEventListener('click', () => {
+      const ver = inp.type === 'password';
+      inp.type = ver ? 'text' : 'password';
+      b.innerHTML = ver ? TACHADO : ABIERTO;
+      b.setAttribute('aria-label', ver ? 'Ocultar contraseña' : 'Mostrar contraseña');
+    });
+    caja.appendChild(b);
+  });
+}
+agregarOjitos();
 
   arrancar();
 })();
