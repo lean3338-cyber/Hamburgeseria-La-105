@@ -24,9 +24,9 @@ const productos = [
     desc: '4 hamburguesas completas + 2 porciones de papas.', img: '' },
   // Pizzas
   { id: 10, nombre: 'Pizza Muzzarella', categoria: 'pizzas', precio: 12000, emoji: '🍕',
-    desc: 'Clásica pizza de muzzarella.', img: 'img/pizza-muzzarella.jpg' },
+    desc: 'Clásica pizza de muzzarella.', img: 'img/pizza-napolitana-jamon.jpg' },
   { id: 11, nombre: 'Pizza Jamón y Queso', categoria: 'pizzas', precio: 12000, emoji: '🍕',
-    desc: 'Muzzarella con jamón.', img: 'img/pizza-jamon.jpg' },
+    desc: 'pizza jamon y queso.', img: 'img/pizza-jamon.jpg' },
   { id: 12, nombre: 'Pizza Napolitana', categoria: 'pizzas', precio: 9000, emoji: '🍕',
     desc: 'Pizza Napolitana.', img: 'img/pizza-napolitana.jpg' },
   { id: 13, nombre:'Pizza con Huevo', categoria: 'pizzas', precio: 12000, emoji: '🍕',
