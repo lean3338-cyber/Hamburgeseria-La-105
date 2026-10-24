@@ -28,7 +28,7 @@ const productos = [
   { id: 11, nombre: 'Pizza Jamón y Queso', categoria: 'pizzas', precio: 12000, emoji: '🍕',
     desc: 'Muzzarella con jamón.', img: 'img/pizza-jamon.jpg' },
   { id: 12, nombre: 'Pizza Napolitana', categoria: 'pizzas', precio: 9000, emoji: '🍕',
-    desc: 'Muzzarella con rodajas de tomate y albahaca.', img: 'img/pizza-napolitana.jpg' },
+    desc: 'Pizza Napolitana.', img: 'img/pizza-napolitana.jpg' },
   { id: 13, nombre:'Pizza con Huevo', categoria: 'pizzas', precio: 12000, emoji: '🍕',
       desc: 'Pizza con Huevo', img: 'img/pizza-huevo.jpg'},
 ];
