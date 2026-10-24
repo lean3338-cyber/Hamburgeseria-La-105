@@ -5,7 +5,7 @@ const productos = [
   { id: 1, nombre: 'Simple + Papas', categoria: 'combos', precio: 6000, emoji: '🍔',
     desc: '1 hamburguesa simple + 1 porción de papas fritas.', img: 'img/simple-papas.jpg' },
   { id: 2, nombre: 'Completa + Papas', categoria: 'combos', precio: 7000, emoji: '🍔',
-    desc: '1 hamburguesa completa + 1 porción de papas fritas.', img: 'combo-completa.jpg' },
+    desc: '1 hamburguesa completa + 1 porción de papas fritas.', img: 'img/combo-completa.jpg' },
   { id: 3, nombre: 'Doble Carne + Papas', categoria: 'combos', precio: 8000, emoji: '🍔',
     desc: '1 hamburguesa doble carne + 1 porción de papas fritas.', img: 'doble-carne.jpg' },
   // Solo burger
