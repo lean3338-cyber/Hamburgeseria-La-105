@@ -387,3 +387,26 @@ function agregarOjitos() {
   });
 }
 agregarOjitos();
+
+/* ---------- Ampliar imágenes (tocá una foto para verla grande) ---------- */
+(function () {
+  const caja = document.createElement('div');
+  caja.className = 'lightbox hidden';
+  caja.innerHTML = '<button type="button" class="lightbox-x" aria-label="Cerrar">&times;</button><img alt="">';
+  document.body.appendChild(caja);
+  const img = caja.querySelector('img');
+  function cerrar() { caja.classList.add('hidden'); document.body.style.overflow = ''; }
+  caja.addEventListener('click', cerrar);
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') cerrar(); });
+  document.addEventListener('click', (e) => {
+    const f = e.target.closest('.menu-card-img img, .carta-card, .about-photo img, .gallery-item img');
+    if (!f) return;
+    const foto = f.tagName === 'IMG' ? f : f.querySelector('img');
+    if (!foto) return;
+    e.preventDefault();
+    img.src = foto.currentSrc || foto.src;
+    img.alt = foto.alt;
+    caja.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  });
+})();
