@@ -5,9 +5,9 @@ const productos = [
   { id: 1, nombre: 'Simple + Papas', categoria: 'combos', precio: 6000, emoji: '🍔',
     desc: '1 hamburguesa simple + 1 porción de papas fritas.', img: 'img/simple-papas.jpg' },
   { id: 2, nombre: 'Completa + Papas', categoria: 'combos', precio: 7000, emoji: '🍔',
-    desc: '1 hamburguesa completa + 1 porción de papas fritas.', img: '' },
+    desc: '1 hamburguesa completa + 1 porción de papas fritas.', img: 'combo-completa.jpg' },
   { id: 3, nombre: 'Doble Carne + Papas', categoria: 'combos', precio: 8000, emoji: '🍔',
-    desc: '1 hamburguesa doble carne + 1 porción de papas fritas.', img: '' },
+    desc: '1 hamburguesa doble carne + 1 porción de papas fritas.', img: 'doble-carne.jpg' },
   // Solo burger
   { id: 4, nombre: 'Hamburguesa Simple', categoria: 'solo', precio: 4000, emoji: '🍔',
     desc: 'Hamburguesa simple, sola.', img: 'img/hambu-simple.jpg' },
@@ -23,10 +23,12 @@ const productos = [
   { id: 9, nombre: '4 Completas + 2 Papas', categoria: 'compartir', precio: 23000, emoji: '🍔🍟',
     desc: '4 hamburguesas completas + 2 porciones de papas.', img: '' },
   // Pizzas
-  { id: 10, nombre: 'Pizza Muzzarella', categoria: 'pizzas', precio: 9000, emoji: '🍕',
+  { id: 10, nombre: 'Pizza Muzzarella', categoria: 'pizzas', precio: 12000, emoji: '🍕',
     desc: 'Clásica pizza de muzzarella.', img: 'img/pizza-muzzarella.jpg' },
   { id: 11, nombre: 'Pizza Jamón y Queso', categoria: 'pizzas', precio: 12000, emoji: '🍕',
     desc: 'Muzzarella con jamón.', img: 'img/pizza-jamon.jpg' },
-  { id: 12, nombre: 'Pizza Napolitana', categoria: 'pizzas', precio: 12000, emoji: '🍕',
+  { id: 12, nombre: 'Pizza Napolitana', categoria: 'pizzas', precio: 9000, emoji: '🍕',
     desc: 'Muzzarella con rodajas de tomate y albahaca.', img: 'img/pizza-napolitana.jpg' },
+  { id: 13, nombre:'Pizza con Huevo', categoria: 'pizzas', precio: 12000, emoji: '🍕',
+      desc: 'Pizza con Huevo', img: 'img/pizza-huevo.jpg'},
 ];
